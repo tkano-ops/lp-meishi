@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 910 550" width="91mm" height="55mm">
+  <title>Variant C Front — フォトグラフィック</title>
+
+  <defs>
+    <linearGradient id="photoOverlay" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a2540" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#0a2540" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#0a2540" stop-opacity="0.92"/>
+    </linearGradient>
+  </defs>
+
+  <image
+    href="../../../public/clients/kano/profile.jpg"
+    x="0" y="0" width="910" height="550"
+    preserveAspectRatio="xMidYMid slice"/>
+  <!-- 印刷前に上の image href を実印刷用の高解像度写真パスへ差し替える -->
+
+  <rect width="910" height="550" fill="url(#photoOverlay)"/>
+
+  <text x="40" y="430"
+    font-family="Inter, sans-serif"
+    font-weight="300"
+    font-size="14"
+    fill="#0ea5e9"
+    letter-spacing="5">HITOIRO — VOL.01</text>
+
+  <text x="40" y="490"
+    font-family="Noto Serif JP, 'Hiragino Mincho ProN', serif"
+    font-weight="500"
+    font-size="68"
+    fill="#fafaf7">加納 斗良士</text>
+
+  <text x="40" y="520"
+    font-family="Inter, sans-serif"
+    font-weight="300"
+    font-size="18"
+    fill="#fafaf7"
+    fill-opacity="0.85"
+    letter-spacing="5">KANO TORAJI — FOUNDER &amp; CEO</text>
+</svg>

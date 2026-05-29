@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-hitoiro-ink: #0a0a0a;
+  --color-hitoiro-paper: #fafaf7;
+  --color-hitoiro-mute: #71717a;
+
+  --font-sans: var(--font-jp-sans), system-ui, -apple-system, "Hiragino Kaku Gothic ProN", sans-serif;
+  --font-serif: var(--font-jp-serif), "Hiragino Mincho ProN", "Yu Mincho", serif;
+  --font-mono: var(--font-en), ui-monospace, "SF Mono", Menlo, monospace;
+}
+
+html,
+body {
+  background: var(--color-hitoiro-paper);
+  color: var(--color-hitoiro-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: currentColor;
+  color: var(--color-hitoiro-paper);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}

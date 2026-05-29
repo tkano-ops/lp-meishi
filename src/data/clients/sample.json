@@ -1,0 +1,54 @@
+{
+  "slug": "sample",
+  "name": "サンプル 太郎",
+  "nameKana": "サンプル タロウ",
+  "title": "出会いを、ご縁に変える人",
+  "subtitle": "ブランドコンサルタント",
+  "theme": {
+    "primary": "#1a1a1a",
+    "accent": "#d4a574",
+    "background": "#fafafa",
+    "text": "#1a1a1a",
+    "style": "light"
+  },
+  "sections": {
+    "hero": {
+      "photo": "/clients/sample/hero.jpg",
+      "catchphrase": "出会いを、ご縁に変える人",
+      "subtitle": "ブランドコンサルタント"
+    },
+    "story": {
+      "heading": "なぜブランディングなのか",
+      "body": "前職の広告代理店で「伝え方ひとつで人生が変わる」場面に何度も立ち会いました。今は個人事業主の方が、自分らしさをそのまま価値にできる仕組みを作っています。"
+    },
+    "services": [
+      {
+        "title": "個人ブランディング設計",
+        "description": "あなたの強み・価値観をヒアリングし、ブランドの軸を一緒に作ります。"
+      }
+    ],
+    "achievements": [
+      { "label": "支援実績 200社以上" },
+      { "label": "メディア出演 10回" }
+    ],
+    "testimonials": [
+      {
+        "quote": "私の伝えたいことを、私以上に的確に言葉にしてくれました。",
+        "author": "A.S 様",
+        "authorTitle": "美容サロン経営"
+      }
+    ],
+    "vision": {
+      "heading": "ビジョン",
+      "body": "一人ひとりの「らしさ」が報われる社会を作りたい。"
+    },
+    "sns": [{ "platform": "x", "url": "https://x.com/sample" }],
+    "contact": [
+      {
+        "type": "line",
+        "url": "https://line.me/ti/p/~sample",
+        "label": "LINEで相談する"
+      }
+    ]
+  }
+}

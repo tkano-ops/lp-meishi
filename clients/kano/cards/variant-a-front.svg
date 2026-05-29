@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 910 550" width="91mm" height="55mm">
+  <title>Variant A Front — 漢字一文字「繋」</title>
+
+  <rect width="910" height="550" fill="#0a2540"/>
+
+  <circle cx="855" cy="55" r="18" fill="#0ea5e9"/>
+
+  <text x="455" y="295"
+    font-family="Noto Serif JP, 'Hiragino Mincho ProN', serif"
+    font-weight="500"
+    font-size="320"
+    fill="#fafaf7"
+    text-anchor="middle"
+    dominant-baseline="central">繋</text>
+
+  <text x="40" y="495"
+    font-family="Noto Serif JP, 'Hiragino Mincho ProN', serif"
+    font-weight="500"
+    font-size="38"
+    fill="#fafaf7">加納 斗良士</text>
+
+  <text x="40" y="525"
+    font-family="Inter, sans-serif"
+    font-weight="300"
+    font-size="20"
+    fill="#0ea5e9"
+    letter-spacing="5">KANO TORAJI</text>
+
+  <text x="870" y="100"
+    font-family="Inter, sans-serif"
+    font-weight="300"
+    font-size="14"
+    fill="#0ea5e9"
+    text-anchor="end"
+    letter-spacing="3">HITOIRO — VOL.01</text>
+</svg>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 910 550" width="91mm" height="55mm">
+  <title>Variant B Front — タイポグラフィ</title>
+
+  <rect width="910" height="550" fill="#fafaf7"/>
+
+  <rect x="50" y="150" width="3" height="180" fill="#0ea5e9"/>
+
+  <text x="90" y="210"
+    font-family="Noto Serif JP, 'Hiragino Mincho ProN', serif"
+    font-weight="500"
+    font-size="76"
+    fill="#0a2540">日本と世界を、</text>
+
+  <text x="90" y="310"
+    font-family="Noto Serif JP, 'Hiragino Mincho ProN', serif"
+    font-weight="500"
+    font-size="76"
+    fill="#0a2540">人で繋ぐ。</text>
+
+  <text x="90" y="80"
+    font-family="Inter, sans-serif"
+    font-weight="500"
+    font-size="14"
+    fill="#0ea5e9"
+    letter-spacing="5">HITOIRO — ISSUE 01</text>
+
+  <text x="870" y="500"
+    font-family="Noto Serif JP, 'Hiragino Mincho ProN', serif"
+    font-weight="500"
+    font-size="32"
+    fill="#0a2540"
+    text-anchor="end">加納 斗良士</text>
+
+  <text x="870" y="525"
+    font-family="Inter, sans-serif"
+    font-weight="300"
+    font-size="14"
+    fill="#71717a"
+    text-anchor="end"
+    letter-spacing="2">FOUNDER &amp; CEO — GOODCAST</text>
+</svg>

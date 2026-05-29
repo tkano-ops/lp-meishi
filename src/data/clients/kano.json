@@ -1,0 +1,84 @@
+{
+  "slug": "kano",
+  "name": "加納 斗良士",
+  "nameKana": "かのう とらじ",
+  "title": "日本と世界を、人で繋ぐ。",
+  "subtitle": "海外人材×HRテック起業家 / 派遣・日本語学校・SaaS・不動産を展開",
+  "theme": {
+    "primary": "#0a2540",
+    "accent": "#0ea5e9",
+    "background": "#f8fafc",
+    "text": "#0a2540",
+    "style": "cool"
+  },
+  "sections": {
+    "hero": {
+      "photo": "/clients/kano/profile.jpg",
+      "catchphrase": "日本と世界を、人で繋ぐ。",
+      "subtitle": "株式会社グッドキャスト 代表取締役"
+    },
+    "story": {
+      "heading": "17歳で起業、20歳で再挑戦。",
+      "body": "17歳で学生起業し、18歳で事業売却。次は『上場できるビジネスモデルでやり直す』と決めて選んだのが海外人材特化の人材派遣だった。20歳でグッドキャストを設立、4期目で年商10億。介護・製造の現場に、ベトナム・インドネシア・ミャンマーから人を送る。日本人スタッフが定着しない現場で、海外の方々は定着率も態度も圧倒的に違った。彼らは家族への仕送りや、いつか家族を呼び寄せたいという夢を持って来日している。その夢を叶えられる職場をつくる。",
+      "career": [
+        "17歳：学生起業（Webマーケ会社）",
+        "18歳：事業売却",
+        "20歳：株式会社グッドキャスト設立",
+        "現在：4期目、年商10億・営業利益1億",
+        "事業：人材派遣／日本語学校／不動産／カケハシ／ヒトイロ"
+      ],
+      "breakoutImage": {
+        "src": "/clients/kano/office.jpg",
+        "caption": "GOODCAST HEAD OFFICE — 拠点を構え、海外3拠点と繋がる現場。"
+      }
+    },
+    "services": [
+      {
+        "title": "グッドキャスト人材派遣",
+        "description": "介護施設・製造業向け、ベトナム・インドネシア・ミャンマー国籍の海外人材派遣。正社員化費用は無償で切替可能。"
+      },
+      {
+        "title": "カケハシ（日本語学習）",
+        "description": "介護・製造・外食・宿泊業の現場語彙に特化した日本語学習プラットフォーム。"
+      },
+      {
+        "title": "ヒトイロ（LP名刺）",
+        "description": "完全オーダーメイドのLP型デジタル名刺。出会いを忘れないものに。"
+      },
+      {
+        "title": "日本語学校・不動産事業",
+        "description": "海外人材の来日前後をワンストップでサポート。"
+      }
+    ],
+    "achievements": [
+      { "label": "令和の虎 虎側として出演" },
+      { "label": "社長ファイトクラブ ほか出演" },
+      { "label": "4期目で年商10億・営業利益1億" },
+      { "label": "20歳で起業、ベトナム・インドネシア・ミャンマー3拠点展開" },
+      { "label": "外国籍人材受け入れセミナー登壇" }
+    ],
+    "testimonials": [],
+    "vision": {
+      "heading": "ビジョン",
+      "body": "東京プロマーケット（TPM）上場、そして東証グロース市場上場を目指す。海外スタッフへの差別・偏見がない、人を一人ひとり見てもらえる世の中をつくる。",
+      "backgroundImage": "/clients/kano/team.jpg"
+    },
+    "gallery": [
+      { "src": "/clients/kano/school.jpg", "caption": "日本語学校 — 来日後の学びを支える拠点。" },
+      { "src": "/clients/kano/study.jpg", "caption": "現場で使う日本語を、現場で学ぶ。" }
+    ],
+    "sns": [
+      { "platform": "x", "url": "https://x.com/kano_goodcast", "label": "X (旧Twitter)" },
+      { "platform": "instagram", "url": "https://instagram.com/kano_goodcast" },
+      { "platform": "youtube", "url": "https://youtube.com/@goodcast" },
+      { "platform": "website", "url": "https://goodcast.co.jp", "label": "株式会社グッドキャスト" }
+    ],
+    "contact": [
+      {
+        "type": "email",
+        "url": "mailto:info@goodcast.co.jp",
+        "label": "お問い合わせ"
+      }
+    ]
+  }
+}

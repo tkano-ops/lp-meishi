@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 910 550" width="91mm" height="55mm">
+  <title>Variant A Back</title>
+
+  <rect width="910" height="550" fill="#fafaf7"/>
+
+  <text x="455" y="80"
+    font-family="Inter, sans-serif"
+    font-weight="500"
+    font-size="16"
+    fill="#71717a"
+    text-anchor="middle"
+    letter-spacing="4">FOUNDER &amp; CEO — 株式会社グッドキャスト</text>
+
+  <text x="455" y="220"
+    font-family="Noto Serif JP, 'Hiragino Mincho ProN', serif"
+    font-weight="500"
+    font-size="72"
+    fill="#0a2540"
+    text-anchor="middle">人を、繋ぐ。</text>
+
+  <text x="455" y="290"
+    font-family="Inter, sans-serif"
+    font-weight="300"
+    font-size="20"
+    fill="#71717a"
+    text-anchor="middle"
+    letter-spacing="3">info@goodcast.co.jp</text>
+
+  <g transform="translate(80,440)">
+    <circle cx="0" cy="0" r="28" fill="none" stroke="#0a2540" stroke-width="2"/>
+    <path d="M -14 0 Q 0 -18 14 0 M -8 0 Q 0 -10 8 0" fill="none" stroke="#0a2540" stroke-width="2"/>
+    <text x="0" y="55"
+      font-family="Inter, sans-serif"
+      font-weight="500"
+      font-size="14"
+      fill="#0a2540"
+      text-anchor="middle"
+      letter-spacing="2">NFC</text>
+  </g>
+
+  <g transform="translate(745,360)">
+    <rect x="0" y="0" width="150" height="150" fill="none" stroke="#0a2540" stroke-width="2" stroke-dasharray="8 4"/>
+    <text x="75" y="180"
+      font-family="Inter, sans-serif"
+      font-weight="300"
+      font-size="14"
+      fill="#71717a"
+      text-anchor="middle"
+      letter-spacing="2">QR CODE</text>
+  </g>
+
+  <text x="455" y="475"
+    font-family="Inter, sans-serif"
+    font-weight="500"
+    font-size="24"
+    fill="#0a2540"
+    text-anchor="middle"
+    letter-spacing="10">HITOIRO</text>
+
+  <text x="455" y="510"
+    font-family="Noto Serif JP, 'Hiragino Mincho ProN', serif"
+    font-weight="300"
+    font-size="14"
+    fill="#71717a"
+    text-anchor="middle">あなたの色を、一枚に。</text>
+</svg>

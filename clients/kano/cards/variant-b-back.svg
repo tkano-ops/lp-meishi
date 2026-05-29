@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 910 550" width="91mm" height="55mm">
+  <title>Variant B Back</title>
+
+  <rect width="910" height="550" fill="#0a2540"/>
+
+  <text x="455" y="80"
+    font-family="Inter, sans-serif"
+    font-weight="300"
+    font-size="14"
+    fill="#0ea5e9"
+    text-anchor="middle"
+    letter-spacing="5">FOUNDER &amp; CEO — 株式会社グッドキャスト</text>
+
+  <text x="455" y="210"
+    font-family="Noto Serif JP, 'Hiragino Mincho ProN', serif"
+    font-weight="500"
+    font-size="96"
+    fill="#fafaf7"
+    text-anchor="middle">加納 斗良士</text>
+
+  <text x="455" y="260"
+    font-family="Inter, sans-serif"
+    font-weight="300"
+    font-size="22"
+    fill="#0ea5e9"
+    text-anchor="middle"
+    letter-spacing="8">KANO  TORAJI</text>
+
+  <text x="455" y="310"
+    font-family="Inter, sans-serif"
+    font-weight="300"
+    font-size="16"
+    fill="#fafaf7"
+    fill-opacity="0.6"
+    text-anchor="middle"
+    letter-spacing="2">info@goodcast.co.jp  /  goodcast.co.jp</text>
+
+  <g transform="translate(80,440)">
+    <circle cx="0" cy="0" r="28" fill="none" stroke="#fafaf7" stroke-width="2"/>
+    <path d="M -14 0 Q 0 -18 14 0 M -8 0 Q 0 -10 8 0" fill="none" stroke="#fafaf7" stroke-width="2"/>
+    <text x="0" y="55"
+      font-family="Inter, sans-serif"
+      font-weight="500"
+      font-size="14"
+      fill="#fafaf7"
+      text-anchor="middle"
+      letter-spacing="2">NFC</text>
+  </g>
+
+  <g transform="translate(745,360)">
+    <rect x="0" y="0" width="150" height="150" fill="none" stroke="#fafaf7" stroke-width="2" stroke-dasharray="8 4"/>
+    <text x="75" y="180"
+      font-family="Inter, sans-serif"
+      font-weight="300"
+      font-size="14"
+      fill="#fafaf7"
+      fill-opacity="0.6"
+      text-anchor="middle"
+      letter-spacing="2">QR CODE</text>
+  </g>
+
+  <text x="455" y="475"
+    font-family="Inter, sans-serif"
+    font-weight="500"
+    font-size="24"
+    fill="#fafaf7"
+    text-anchor="middle"
+    letter-spacing="10">HITOIRO</text>
+
+  <text x="455" y="510"
+    font-family="Noto Serif JP, 'Hiragino Mincho ProN', serif"
+    font-weight="300"
+    font-size="14"
+    fill="#fafaf7"
+    fill-opacity="0.5"
+    text-anchor="middle">あなたの色を、一枚に。</text>
+</svg>
