@@ -6,9 +6,10 @@ argument-hint: <slug>
 引数で渡されたクライアントslug（例: taro-yamada）のLPコピーを生成してください。
 
 ## 手順
-1. `src/data/clients/{{slug}}.json` を読み込む
-2. ヒアリング情報を元に各セクションのコピーを作成
-3. JSON を更新して保存
+1. `clients/{{slug}}/hearing.md` と `src/data/clients/{{slug}}.json` を読み込む
+2. **`docs/ヒアリング項目マッピング.md` の対応表に従って**、各セクションのコピーを作成
+   （スキーマは `src/lib/types.ts`、記入済み正解例は `src/data/clients/sample.json`）
+3. JSON を更新して保存（`clientDataSchema` に準拠していること）
 
 ## ライティングルール
 
@@ -42,3 +43,4 @@ argument-hint: <slug>
 
 ## 出力
 完成したコピーで `src/data/clients/{{slug}}.json` を更新する。
+`meta`（ogTitle/ogDescription/keywords）と、主CTAの `contact[].primary` も忘れず埋める。

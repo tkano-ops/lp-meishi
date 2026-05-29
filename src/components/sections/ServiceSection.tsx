@@ -10,7 +10,7 @@ export default function ServiceSection({ data }: { data: ClientData }) {
   return (
     <section
       className="relative px-6 sm:px-10 lg:px-16 py-32 sm:py-48"
-      style={{ background: `${data.theme.primary}06` }}
+      style={{ background: data.theme.surface ?? `${data.theme.primary}06` }}
     >
       <div className="max-w-7xl mx-auto">
         <div className="flex items-start justify-between mb-20 sm:mb-32">
@@ -32,7 +32,7 @@ export default function ServiceSection({ data }: { data: ClientData }) {
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
           className="font-serif text-4xl sm:text-6xl lg:text-7xl leading-[1.15] mb-20 sm:mb-28 max-w-4xl tracking-tight font-medium"
         >
-          手がける、<br />四つの事業。
+          手がける、<br />仕事のかたち。
         </motion.h2>
 
         <div className="grid md:grid-cols-2 gap-px" style={{ background: `${data.theme.primary}15` }}>
@@ -43,7 +43,8 @@ export default function ServiceSection({ data }: { data: ClientData }) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.7, delay: i * 0.1 }}
-              className="relative p-8 sm:p-12 lg:p-16 bg-[var(--color-hitoiro-paper)] group hover:bg-white transition-colors duration-500"
+              className="relative p-8 sm:p-12 lg:p-16 group transition-colors duration-500"
+              style={{ background: data.theme.background }}
             >
               <div className="flex items-baseline justify-between mb-8 sm:mb-12">
                 <div

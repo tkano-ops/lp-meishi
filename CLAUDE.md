@@ -32,14 +32,19 @@ src/
 │   │   ├── VisionSection.tsx
 │   │   ├── SnsLinksSection.tsx
 │   │   └── ContactSection.tsx
+│   ├── marketing/        ← サービス紹介LP（営業用 / src/app/page.tsx が使用）
 │   └── ui/               ← 共通UIコンポーネント
 ├── data/
-│   └── clients/          ← クライアントごとのデータ（JSON）
+│   ├── clients/          ← クライアントごとのデータ（JSON）
+│   └── pricing.ts        ← 料金の単一ソース（SSOT）
 ├── lib/
-│   └── types.ts          ← 型定義
-└── styles/
-    └── themes/           ← クライアントごとのテーマ設定
+│   └── types.ts          ← 型定義＋Zodスキーマ（clientDataSchema）
+└── app/
+    └── globals.css       ← Tailwind v4 のテーマ変数（ブランド共通色・フォント）
 ```
+
+> **テーマはデータ駆動**：クライアント別の色・フォントは各 JSON の `theme` オブジェクトで
+> 完結する。`src/styles/themes/` のような slug 別ファイルや slug 分岐コードは**作らない**。
 
 ## LP制作ルール
 
@@ -60,9 +65,10 @@ src/
 8. お問い合わせ・予約ボタン（CTA）
 
 ### コーディング規約
-- コンポーネントは再利用可能に設計する
-- クライアントデータは `src/data/clients/` にJSON形式で管理
-- テーマ（色・フォント等）は `src/styles/themes/` で管理
+- コンポーネントは再利用可能に設計する（共通セクションを使い、slug別の分岐は作らない）
+- クライアントデータは `src/data/clients/` にJSON形式で管理（`clientDataSchema` に準拠）
+- テーマ（色・フォント）は各 JSON の `theme` オブジェクトで管理（データ駆動）
+- 料金は `src/data/pricing.ts` を単一ソースに（`docs/料金表.md` はミラー）
 - 日本語コメントOK
 - 画像は `/public/clients/[slug]/` に格納
 
@@ -75,24 +81,35 @@ src/
   "name": "山田 太郎",
   "title": "キャッチコピー",
   "subtitle": "肩書き・職業",
+  "meta": {
+    "ogTitle": "山田 太郎｜キャッチコピー",
+    "ogDescription": "SNS共有時の説明文",
+    "ogImage": "/clients/taro-yamada/og.png",
+    "keywords": ["キーワード1", "キーワード2"]
+  },
   "theme": {
     "primary": "#1a1a2e",
     "accent": "#e94560",
     "background": "#ffffff",
+    "onPrimary": "#fafaf7",
     "style": "dark"
   },
   "sections": {
     "hero": { ... },
     "story": { ... },
-    "services": { ... },
-    "achievements": { ... },
-    "testimonials": { ... },
+    "services": [ ... ],
+    "achievements": [ ... ],
+    "testimonials": [ ... ],
     "vision": { ... },
-    "sns": { ... },
-    "contact": { ... }
+    "gallery": [ ... ],
+    "sns": [ ... ],
+    "contact": [ ... ]
   }
 }
 ```
+
+> 厳密な定義は `src/lib/types.ts` の `clientDataSchema`、記入済みの正解例は
+> `src/data/clients/sample.json`、各項目の変換ルールは `docs/ヒアリング項目マッピング.md` を参照。
 
 ## 作業フロー
 1. `/hearing` でクライアントからヒアリング

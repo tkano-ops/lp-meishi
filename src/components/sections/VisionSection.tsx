@@ -2,16 +2,18 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import type { ClientData } from "@/lib/types";
+import { onPrimary, type ClientData } from "@/lib/types";
 
 export default function VisionSection({ data }: { data: ClientData }) {
   const { vision } = data.sections;
   if (!vision) return null;
+  const bg = data.theme.visionBackground ?? "#0a0a0a";
+  const fg = onPrimary(data.theme);
 
   return (
     <section
       className="relative px-6 sm:px-10 lg:px-16 py-32 sm:py-56 overflow-hidden"
-      style={{ background: "#0a0a0a", color: "#fafaf7" }}
+      style={{ background: bg, color: fg }}
     >
       {vision.backgroundImage && (
         <div className="absolute inset-0 pointer-events-none">
@@ -25,7 +27,7 @@ export default function VisionSection({ data }: { data: ClientData }) {
           <div
             className="absolute inset-0"
             style={{
-              background: `linear-gradient(135deg, #0a0a0aee 0%, #0a0a0acc 50%, ${data.theme.primary}aa 100%)`,
+              background: `linear-gradient(135deg, ${bg}ee 0%, ${bg}cc 50%, ${data.theme.primary}aa 100%)`,
             }}
           />
         </div>

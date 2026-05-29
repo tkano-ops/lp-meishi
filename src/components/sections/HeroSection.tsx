@@ -2,17 +2,18 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import type { ClientData } from "@/lib/types";
+import { onPrimary, type ClientData } from "@/lib/types";
 
 export default function HeroSection({ data }: { data: ClientData }) {
   const titleLines = data.title.split("、");
   const year = new Date().getFullYear();
   const photo = data.sections.hero.photo;
+  const fg = onPrimary(data.theme);
 
   return (
     <section
       className="min-h-screen relative overflow-hidden flex flex-col justify-between"
-      style={{ background: data.theme.primary, color: "#fafaf7" }}
+      style={{ background: data.theme.primary, color: fg }}
     >
       <div
         aria-hidden

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Noto_Serif_JP, Noto_Sans_JP, Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const serifJP = Noto_Serif_JP({
@@ -23,7 +24,10 @@ const inter = Inter({
   display: "swap",
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://hitoiro.co.jp";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "ヒトイロ｜あなたの色を、一枚に。",
   description:
     "完全オーダーメイドのLP型デジタル名刺サービス。NFCカードをかざすだけで、あなた専用のランディングページが立ち上がります。",
@@ -45,7 +49,10 @@ export default function RootLayout({
       lang="ja"
       className={`${serifJP.variable} ${sansJP.variable} ${inter.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }

@@ -40,7 +40,8 @@ export default function TestimonialSection({ data }: { data: ClientData }) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.7, delay: i * 0.1 }}
-              className="relative p-10 sm:p-14 lg:p-16 bg-[var(--color-hitoiro-paper)]"
+              className="relative p-10 sm:p-14 lg:p-16"
+              style={{ background: data.theme.surface ?? `${data.theme.primary}06` }}
             >
               <div
                 className="font-serif text-7xl leading-none mb-6 opacity-40"

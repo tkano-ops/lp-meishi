@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import type { ClientData } from "@/lib/types";
+import { onPrimary, type ClientData } from "@/lib/types";
 
 export default function AchievementSection({ data }: { data: ClientData }) {
   const { achievements } = data.sections;
@@ -10,7 +10,7 @@ export default function AchievementSection({ data }: { data: ClientData }) {
   return (
     <section
       className="relative px-6 sm:px-10 lg:px-16 py-32 sm:py-48 overflow-hidden"
-      style={{ background: data.theme.primary, color: "#fafaf7" }}
+      style={{ background: data.theme.primary, color: onPrimary(data.theme) }}
     >
       <div
         aria-hidden

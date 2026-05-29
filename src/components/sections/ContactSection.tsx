@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import type { ClientData, ContactLink } from "@/lib/types";
+import { onPrimary, type ClientData, type ContactLink } from "@/lib/types";
 
 const labelByType: Record<ContactLink["type"], string> = {
   line: "LINEで連絡",
@@ -14,11 +14,12 @@ const labelByType: Record<ContactLink["type"], string> = {
 export default function ContactSection({ data }: { data: ClientData }) {
   const { contact } = data.sections;
   if (!contact || contact.length === 0) return null;
+  const fg = onPrimary(data.theme);
 
   return (
     <section
       className="relative px-6 sm:px-10 lg:px-16 py-32 sm:py-48 overflow-hidden"
-      style={{ background: data.theme.primary, color: "#fafaf7" }}
+      style={{ background: data.theme.primary, color: fg }}
     >
       <div
         aria-hidden
@@ -71,12 +72,15 @@ export default function ContactSection({ data }: { data: ClientData }) {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.1 }}
               className="group flex items-center justify-between px-6 sm:px-10 py-6 sm:py-8 transition-all hover:px-8 sm:hover:px-12"
-              style={{ background: data.theme.primary }}
+              style={{
+                background: c.primary ? data.theme.accent : data.theme.primary,
+                color: c.primary ? data.theme.primary : fg,
+              }}
             >
               <div className="flex items-baseline gap-4 sm:gap-8">
                 <span
                   className="font-mono text-[10px] tracking-[0.3em] opacity-50"
-                  style={{ color: data.theme.accent }}
+                  style={{ color: c.primary ? data.theme.primary : data.theme.accent }}
                 >
                   {String(i + 1).padStart(2, "0")}
                 </span>
@@ -86,7 +90,7 @@ export default function ContactSection({ data }: { data: ClientData }) {
               </div>
               <span
                 className="font-mono text-sm sm:text-base tracking-widest transition-transform group-hover:translate-x-2"
-                style={{ color: data.theme.accent }}
+                style={{ color: c.primary ? data.theme.primary : data.theme.accent }}
               >
                 →
               </span>

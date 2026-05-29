@@ -4,11 +4,17 @@
   "nameKana": "かのう とらじ",
   "title": "日本と世界を、人で繋ぐ。",
   "subtitle": "海外人材×HRテック起業家 / 派遣・日本語学校・SaaS・不動産を展開",
+  "meta": {
+    "ogTitle": "加納 斗良士｜日本と世界を、人で繋ぐ。",
+    "ogDescription": "20歳でグッドキャストを設立、4期目で年商10億。海外人材派遣・日本語学校・SaaS・不動産を展開する起業家。",
+    "keywords": ["加納斗良士", "グッドキャスト", "海外人材", "人材派遣", "起業家", "ヒトイロ"]
+  },
   "theme": {
     "primary": "#0a2540",
     "accent": "#0ea5e9",
     "background": "#f8fafc",
     "text": "#0a2540",
+    "onPrimary": "#f8fafc",
     "style": "cool"
   },
   "sections": {
@@ -77,7 +83,8 @@
       {
         "type": "email",
         "url": "mailto:info@goodcast.co.jp",
-        "label": "お問い合わせ"
+        "label": "お問い合わせ",
+        "primary": true
       }
     ]
   }

@@ -3,12 +3,20 @@
   "name": "サンプル 太郎",
   "nameKana": "サンプル タロウ",
   "title": "出会いを、ご縁に変える人",
-  "subtitle": "ブランドコンサルタント",
+  "subtitle": "ブランドコンサルタント / 元・広告代理店プランナー",
+  "meta": {
+    "ogTitle": "サンプル太郎｜出会いを、ご縁に変える人",
+    "ogDescription": "個人事業主のための個人ブランディング設計。あなたの「らしさ」をそのまま価値に変えます。",
+    "keywords": ["ブランディング", "個人事業主", "コンサルティング", "サンプル太郎"]
+  },
   "theme": {
     "primary": "#1a1a1a",
     "accent": "#d4a574",
     "background": "#fafafa",
     "text": "#1a1a1a",
+    "onPrimary": "#fafaf7",
+    "surface": "#f2f0ec",
+    "visionBackground": "#0a0a0a",
     "style": "light"
   },
   "sections": {
@@ -18,32 +26,69 @@
       "subtitle": "ブランドコンサルタント"
     },
     "story": {
-      "heading": "なぜブランディングなのか",
-      "body": "前職の広告代理店で「伝え方ひとつで人生が変わる」場面に何度も立ち会いました。今は個人事業主の方が、自分らしさをそのまま価値にできる仕組みを作っています。"
+      "heading": "なぜ、ブランディングなのか。",
+      "body": "前職の広告代理店で「伝え方ひとつで人生が変わる」場面に何度も立ち会いました。良いものを持っているのに、伝わらないだけで埋もれていく人を数えきれないほど見てきた。今は個人事業主の方が、自分らしさをそのまま価値にできる仕組みを作っています。",
+      "career": [
+        "2014年：大手広告代理店入社",
+        "2019年：独立、ブランドコンサルタントとして活動開始",
+        "現在：個人事業主・経営者を中心に200社以上を支援"
+      ],
+      "breakoutImage": {
+        "src": "/clients/sample/work.jpg",
+        "alt": "クライアントとのブランディングワークショップの様子",
+        "caption": "STUDIO — 半日かけて「らしさ」を言語化するワークショップ。"
+      }
     },
     "services": [
       {
         "title": "個人ブランディング設計",
         "description": "あなたの強み・価値観をヒアリングし、ブランドの軸を一緒に作ります。"
+      },
+      {
+        "title": "発信コンテンツ戦略",
+        "description": "SNS・ブログで何をどう伝えるか、3ヶ月の発信計画に落とし込みます。"
       }
     ],
     "achievements": [
-      { "label": "支援実績 200社以上" },
-      { "label": "メディア出演 10回" }
+      { "label": "支援実績 200社以上", "detail": "個人事業主・士業・サロン経営者が中心" },
+      { "label": "メディア出演 10回", "date": "2020-2025" }
     ],
     "testimonials": [
       {
-        "quote": "私の伝えたいことを、私以上に的確に言葉にしてくれました。",
+        "quote": "私の伝えたいことを、私以上に的確に言葉にしてくれました。発信が怖くなくなりました。",
         "author": "A.S 様",
         "authorTitle": "美容サロン経営"
       }
     ],
     "vision": {
-      "heading": "ビジョン",
-      "body": "一人ひとりの「らしさ」が報われる社会を作りたい。"
+      "heading": "「らしさ」が報われる社会へ。",
+      "body": "一人ひとりの「らしさ」が、ちゃんと価値として報われる社会を作りたい。伝え方で消えてしまう才能を、一つでも多く世に出すのが私の仕事です。",
+      "backgroundImage": "/clients/sample/vision.jpg"
     },
-    "sns": [{ "platform": "x", "url": "https://x.com/sample" }],
+    "gallery": [
+      {
+        "src": "/clients/sample/gallery-1.jpg",
+        "alt": "セミナー登壇の様子",
+        "caption": "登壇 — 年間20回のセミナーで発信の型を伝える。"
+      },
+      {
+        "src": "/clients/sample/gallery-2.jpg",
+        "alt": "1on1コンサルティングの様子",
+        "caption": "1on1 — 一人ひとりの言葉を一緒に磨く時間。"
+      }
+    ],
+    "sns": [
+      { "platform": "x", "url": "https://x.com/sample", "label": "X (旧Twitter)" },
+      { "platform": "instagram", "url": "https://instagram.com/sample" },
+      { "platform": "note", "url": "https://note.com/sample" }
+    ],
     "contact": [
+      {
+        "type": "calendly",
+        "url": "https://calendly.com/sample/30min",
+        "label": "無料相談を予約する",
+        "primary": true
+      },
       {
         "type": "line",
         "url": "https://line.me/ti/p/~sample",
