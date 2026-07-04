@@ -159,3 +159,17 @@
 - 制作事例（実際のクライアントLP）
 - よくある質問
 - お問い合わせフォーム
+
+
+---
+
+## Cursor Cloud specific instructions
+
+Single Next.js 15 (App Router) + TypeScript + Tailwind v4 frontend. No backend, database, or external services — nothing else needs to run to test it end to end. Node 22 / npm (lockfile is `package-lock.json`).
+
+Standard commands live in `package.json` / `README.md`; key non-obvious notes:
+
+- Dev server: `npm run dev` (Turbopack) serves on `http://localhost:3000`. Routes: `/` (service marketing LP), `/[slug]` for clients (e.g. `/sample`, `/kano`) driven by `src/data/clients/*.json`.
+- Primary correctness check is `npm run typecheck` (`tsc --noEmit`). `npm run build` also runs type checks.
+- `npm run lint` (`next lint`) is **interactive and not pre-configured** (no eslint config is committed), so it blocks on a setup prompt in non-interactive shells. Use `npm run typecheck` instead unless you intentionally add an eslint config.
+- Client image paths resolve under `/public/clients/[slug]/`. The `sample` client uses placeholder captions containing markdown image syntax that renders as raw text — this is sample data, not an app bug; real clients like `kano` render correctly.
