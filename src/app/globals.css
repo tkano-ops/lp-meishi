@@ -34,3 +34,33 @@ body {
     scroll-behavior: smooth;
   }
 }
+
+/* 営業資料(/proposal)の印刷用スタイル。A4サイズに1セクション=1ページで収める */
+.proposal-page .proposal-sheet {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 0 auto 24px;
+  padding: 18mm;
+  background: var(--color-hitoiro-paper);
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.08),
+    0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+  .proposal-page .proposal-sheet {
+    box-shadow: none;
+    margin: 0;
+    break-after: page;
+  }
+  .proposal-page .proposal-sheet:last-child {
+    break-after: auto;
+  }
+  .proposal-no-print {
+    display: none !important;
+  }
+}
