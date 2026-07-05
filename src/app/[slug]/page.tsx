@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import fs from "node:fs/promises";
 import path from "node:path";
-import { clientDataSchema, type ClientData } from "@/lib/types";
+import { loadClient } from "@/lib/loadClient";
 import HeroSection from "@/components/sections/HeroSection";
 import StorySection from "@/components/sections/StorySection";
 import ServiceSection from "@/components/sections/ServiceSection";
@@ -13,41 +13,8 @@ import GallerySection from "@/components/sections/GallerySection";
 import SnsLinksSection from "@/components/sections/SnsLinksSection";
 import ContactSection from "@/components/sections/ContactSection";
 
-async function loadClient(slug: string): Promise<ClientData | null> {
-  let raw: string;
-  try {
-    const file = path.join(
-      process.cwd(),
-      "src",
-      "data",
-      "clients",
-      `${slug}.json`
-    );
-    raw = await fs.readFile(file, "utf-8");
-  } catch {
-    // ファイルが無い → 404 扱い
-    return null;
-  }
-
-  // 実行時バリデーション：型に反する手書きJSONはここで弾く
-  let parsed: unknown;
-  try {
-    parsed = JSON.parse(raw);
-  } catch {
-    console.error(`[loadClient] ${slug}.json の JSON 構文が不正です`);
-    return null;
-  }
-
-  const result = clientDataSchema.safeParse(parsed);
-  if (!result.success) {
-    console.error(
-      `[loadClient] ${slug}.json がスキーマに違反しています:\n` +
-        JSON.stringify(result.error.flatten(), null, 2)
-    );
-    return null;
-  }
-  return result.data;
-}
+// セルフ編集の保存時に revalidatePath で即時更新するので、これは保険としての定期再生成
+export const revalidate = 3600;
 
 export async function generateStaticParams() {
   const dir = path.join(process.cwd(), "src", "data", "clients");

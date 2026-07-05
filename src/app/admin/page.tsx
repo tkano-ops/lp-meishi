@@ -44,12 +44,26 @@ export default async function AdminPage() {
             </h1>
             <p className="text-xs text-gray-500 mt-0.5">ヒアリング結果一覧</p>
           </div>
-          <a
-            href="/hearing"
-            className="text-sm text-gray-500 hover:text-gray-900 transition-colors"
-          >
-            + 新規ヒアリング
-          </a>
+          <div className="flex items-center gap-4">
+            <a
+              href="/admin/clients"
+              className="text-sm text-gray-500 hover:text-gray-900 transition-colors"
+            >
+              クライアント一覧
+            </a>
+            <a
+              href="/admin/threads"
+              className="text-sm text-gray-500 hover:text-gray-900 transition-colors"
+            >
+              Threads見込み客
+            </a>
+            <a
+              href="/hearing"
+              className="text-sm text-gray-500 hover:text-gray-900 transition-colors"
+            >
+              + 新規ヒアリング
+            </a>
+          </div>
         </div>
       </header>
 
