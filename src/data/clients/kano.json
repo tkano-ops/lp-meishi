@@ -74,10 +74,8 @@
       { "src": "/clients/kano/study.jpg", "caption": "現場で使う日本語を、現場で学ぶ。" }
     ],
     "sns": [
-      { "platform": "x", "url": "https://x.com/kano_goodcast", "label": "X (旧Twitter)" },
-      { "platform": "instagram", "url": "https://instagram.com/kano_goodcast" },
-      { "platform": "youtube", "url": "https://youtube.com/@goodcast" },
-      { "platform": "website", "url": "https://goodcast.co.jp", "label": "株式会社グッドキャスト" }
+      { "platform": "instagram", "url": "https://instagram.com/toraji_kano" },
+      { "platform": "website", "url": "https://goodcast.biz", "label": "株式会社グッドキャスト" }
     ],
     "contact": [
       {
