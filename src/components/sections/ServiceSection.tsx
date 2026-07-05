@@ -35,7 +35,10 @@ export default function ServiceSection({ data }: { data: ClientData }) {
           手がける、<br />仕事のかたち。
         </motion.h2>
 
-        <div className="grid md:grid-cols-2 gap-px" style={{ background: `${data.theme.primary}15` }}>
+        <div
+          className={`grid gap-px ${services.length > 1 ? "md:grid-cols-2" : ""}`}
+          style={{ background: `${data.theme.primary}15` }}
+        >
           {services.map((service, i) => (
             <motion.article
               key={i}
