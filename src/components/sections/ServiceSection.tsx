@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import type { ClientData } from "@/lib/types";
+import { spectrumColor, type ClientData } from "@/lib/types";
 
 export default function ServiceSection({ data }: { data: ClientData }) {
   const { services } = data.sections;
@@ -39,7 +39,9 @@ export default function ServiceSection({ data }: { data: ClientData }) {
           className={`grid gap-px ${services.length > 1 ? "md:grid-cols-2" : ""}`}
           style={{ background: `${data.theme.primary}15` }}
         >
-          {services.map((service, i) => (
+          {services.map((service, i) => {
+            const color = spectrumColor(data.theme, i);
+            return (
             <motion.article
               key={i}
               initial={{ opacity: 0, y: 30 }}
@@ -52,13 +54,13 @@ export default function ServiceSection({ data }: { data: ClientData }) {
               <div className="flex items-baseline justify-between mb-8 sm:mb-12">
                 <div
                   className="font-mono text-[10px] tracking-[0.4em] opacity-50"
-                  style={{ color: data.theme.accent }}
+                  style={{ color }}
                 >
                   SERVICE / {String(i + 1).padStart(2, "0")}
                 </div>
                 <div
                   className="font-serif text-6xl sm:text-7xl lg:text-8xl font-light opacity-10 leading-none group-hover:opacity-30 transition-opacity duration-500"
-                  style={{ color: data.theme.accent }}
+                  style={{ color }}
                 >
                   {String(i + 1).padStart(2, "0")}
                 </div>
@@ -74,10 +76,11 @@ export default function ServiceSection({ data }: { data: ClientData }) {
               </p>
               <div
                 className="mt-8 sm:mt-12 h-px w-12 transition-all duration-500 group-hover:w-24"
-                style={{ background: data.theme.accent }}
+                style={{ background: color }}
               />
             </motion.article>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

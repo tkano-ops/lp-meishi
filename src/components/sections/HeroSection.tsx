@@ -9,6 +9,7 @@ export default function HeroSection({ data }: { data: ClientData }) {
   const year = new Date().getFullYear();
   const photo = data.sections.hero.photo;
   const fg = onPrimary(data.theme);
+  const spectrum = data.theme.spectrum;
 
   return (
     <section
@@ -23,6 +24,16 @@ export default function HeroSection({ data }: { data: ClientData }) {
           backgroundSize: "32px 32px",
         }}
       />
+
+      {spectrum && spectrum.length > 0 && (
+        <div
+          aria-hidden
+          className="absolute -top-40 -right-40 w-[70vw] h-[70vw] max-w-[900px] max-h-[900px] rounded-full blur-3xl opacity-30 pointer-events-none"
+          style={{
+            background: `conic-gradient(from 90deg, ${[...spectrum, spectrum[0]].join(", ")})`,
+          }}
+        />
+      )}
 
       {photo && (
         <div className="absolute inset-y-0 right-0 w-full lg:w-[55%] pointer-events-none">
@@ -118,7 +129,7 @@ export default function HeroSection({ data }: { data: ClientData }) {
               </div>
             )}
           </div>
-          <div className="sm:max-w-md sm:text-right text-sm sm:text-base opacity-80 leading-relaxed font-light">
+          <div className="sm:max-w-md sm:text-right text-sm sm:text-base opacity-80 leading-relaxed font-light [word-break:keep-all]">
             {data.subtitle}
           </div>
         </motion.div>

@@ -32,6 +32,9 @@ export const themeSchema = z.object({
   surface: z.string().optional(),
   /** Vision セクションの背景色（省略時 #0a0a0a） */
   visionBackground: z.string().optional(),
+  /** 「ヒトイロ」の多色パレット。指定すると、ヒーローのにじみ演出やセクション番号などが
+   * 単色の accent ではなくこの配列を巡回して彩られる（本体LP同様の“虹色”トンマナ用） */
+  spectrum: z.array(z.string()).optional(),
   style: themeStyleSchema,
   fontHeading: z.string().optional(),
   fontBody: z.string().optional(),
@@ -145,3 +148,9 @@ export type ClientData = z.infer<typeof clientDataSchema>;
 
 /** primary 背景セクション上の文字色を返すヘルパ（テーマで上書き可、既定は紙色） */
 export const onPrimary = (theme: Theme): string => theme.onPrimary ?? "#fafaf7";
+
+/** spectrum が指定されていればそれを巡回、なければ単色 accent を返すヘルパ */
+export const spectrumColor = (theme: Theme, index: number): string =>
+  theme.spectrum && theme.spectrum.length > 0
+    ? theme.spectrum[index % theme.spectrum.length]
+    : theme.accent;

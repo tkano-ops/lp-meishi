@@ -10,13 +10,14 @@
     "keywords": ["LP型名刺", "デジタル名刺", "ヒトイロ", "フリーランス", "個人事業主", "自己紹介"]
   },
   "theme": {
-    "primary": "#1e2a3a",
-    "accent": "#c9a84c",
-    "background": "#ffffff",
-    "text": "#1e2a3a",
+    "primary": "#0a0a0a",
+    "accent": "#3a86ff",
+    "background": "#fafaf7",
+    "text": "#0a0a0a",
     "onPrimary": "#fafaf7",
-    "surface": "#f4f4f2",
-    "style": "dark"
+    "surface": "#f2f0ec",
+    "spectrum": ["#e94560", "#f0a500", "#2ec4b6", "#3a86ff", "#8338ec"],
+    "style": "mono"
   },
   "sections": {
     "hero": {
