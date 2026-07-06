@@ -42,11 +42,44 @@ export default function StorySection({ data }: { data: ClientData }) {
 
         <div className="grid md:grid-cols-12 gap-8 lg:gap-16 mb-24 sm:mb-32">
           <div className="md:col-span-3">
-            <div
-              className="font-mono text-[10px] tracking-[0.35em] opacity-50 sticky top-8"
-              style={{ color: data.theme.accent }}
-            >
-              ESSAY — 01
+            <div className="sticky top-8">
+              <div
+                className="font-mono text-[10px] tracking-[0.35em] opacity-50"
+                style={{ color: data.theme.accent }}
+              >
+                ESSAY — 01
+              </div>
+              {story.sideImage && (
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-50px" }}
+                  transition={{ duration: 1 }}
+                  className="relative mt-8 aspect-[3/4] w-full max-w-[220px]"
+                >
+                  {story.sideImage.src.endsWith(".svg") ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={story.sideImage.src}
+                      alt={story.sideImage.alt ?? story.sideImage.caption ?? ""}
+                      className="absolute inset-0 w-full h-full object-contain"
+                    />
+                  ) : (
+                    <Image
+                      src={story.sideImage.src}
+                      alt={story.sideImage.alt ?? story.sideImage.caption ?? ""}
+                      fill
+                      sizes="220px"
+                      className="object-contain"
+                    />
+                  )}
+                  {story.sideImage.caption && (
+                    <span className="absolute -bottom-6 left-0 font-mono text-[9px] tracking-[0.25em] opacity-40">
+                      {story.sideImage.caption}
+                    </span>
+                  )}
+                </motion.div>
+              )}
             </div>
           </div>
           <motion.div

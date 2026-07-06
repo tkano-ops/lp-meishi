@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { spectrumColor, type ClientData } from "@/lib/types";
 
 export default function ServiceSection({ data }: { data: ClientData }) {
@@ -65,19 +66,43 @@ export default function ServiceSection({ data }: { data: ClientData }) {
                   {String(i + 1).padStart(2, "0")}
                 </div>
               </div>
-              <h3
-                className="font-serif text-2xl sm:text-3xl lg:text-4xl font-medium mb-6 leading-tight tracking-tight"
-                style={{ color: data.theme.primary }}
-              >
-                {service.title}
-              </h3>
-              <p className="text-sm sm:text-base leading-relaxed opacity-75 max-w-md">
-                {service.description}
-              </p>
-              <div
-                className="mt-8 sm:mt-12 h-px w-12 transition-all duration-500 group-hover:w-24"
-                style={{ background: color }}
-              />
+              <div className={service.image ? "grid lg:grid-cols-2 gap-8 lg:gap-12 items-start" : ""}>
+                <div>
+                  <h3
+                    className="font-serif text-2xl sm:text-3xl lg:text-4xl font-medium mb-6 leading-tight tracking-tight"
+                    style={{ color: data.theme.primary }}
+                  >
+                    {service.title}
+                  </h3>
+                  <p className="text-sm sm:text-base leading-relaxed opacity-75 max-w-md">
+                    {service.description}
+                  </p>
+                  <div
+                    className="mt-8 sm:mt-12 h-px w-12 transition-all duration-500 group-hover:w-24"
+                    style={{ background: color }}
+                  />
+                </div>
+                {service.image && (
+                  <div className="relative aspect-[3/2] w-full">
+                    {service.image.src.endsWith(".svg") ? (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        src={service.image.src}
+                        alt={service.image.alt ?? service.image.caption ?? ""}
+                        className="absolute inset-0 w-full h-full object-contain"
+                      />
+                    ) : (
+                      <Image
+                        src={service.image.src}
+                        alt={service.image.alt ?? service.image.caption ?? ""}
+                        fill
+                        sizes="(max-width: 1024px) 100vw, 40vw"
+                        className="object-cover"
+                      />
+                    )}
+                  </div>
+                )}
+              </div>
             </motion.article>
             );
           })}

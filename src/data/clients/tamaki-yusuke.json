@@ -1,7 +1,6 @@
 {
   "slug": "tamaki-yusuke",
-  "name": "玉木 雄介",
-  "nameKana": "Tamaki Yusuke",
+  "name": "TAMAKI YUSUKE",
   "title": "人と人をつなぐ、新しい自己紹介のかたち。",
   "subtitle": "株式会社ヒトイロ 代表取締役 ／ 株式会社グッドキャスト 執行役員 CHRO",
   "meta": {
@@ -21,9 +20,10 @@
   },
   "sections": {
     "hero": {
-      "photo": "",
+      "photo": "/clients/tamaki-yusuke/hero-mockup.svg",
       "catchphrase": "人と人をつなぐ、新しい自己紹介のかたち。",
-      "subtitle": "株式会社ヒトイロ 代表取締役 ／ 株式会社グッドキャスト 執行役員 CHRO"
+      "subtitle": "株式会社ヒトイロ 代表取締役 ／ 株式会社グッドキャスト 執行役員 CHRO",
+      "hideFooterMeta": true
     },
     "story": {
       "heading": "なぜ、LP型の電子名刺なのか。",
@@ -32,12 +32,21 @@
         "2024年：株式会社グッドキャスト 入社（セールス・マーケティング担当）",
         "2026年現在：株式会社グッドキャスト 執行役員 CHRO 兼任",
         "2026年7月：株式会社ヒトイロ 設立・代表取締役就任"
-      ]
+      ],
+      "sideImage": {
+        "src": "/clients/tamaki-yusuke/business-card-pile.svg",
+        "alt": "乱雑に積み重なった名刺の山",
+        "caption": "名刺交換の先に、残るもの。"
+      }
     },
     "services": [
       {
         "title": "LP型デジタル名刺 制作",
-        "description": "フリーランスや個人事業主・起業家向けに、完全オーダーメイドのLP型デジタル名刺を制作します。想い・バックボーン・事業内容・SNSなど、あなたのすべてを一枚のLPに凝縮。料金は100,000円〜300,000円（内容により応相談）。"
+        "description": "フリーランスや個人事業主・起業家向けに、完全オーダーメイドのLP型デジタル名刺を制作します。想い・バックボーン・事業内容・SNSなど、あなたのすべてを一枚のLPに凝縮。料金は100,000円〜300,000円（内容により応相談）。",
+        "image": {
+          "src": "/clients/tamaki-yusuke/hearing-sketch.svg",
+          "alt": "ヒアリングをしながら名刺デザインを考えている様子のスケッチ"
+        }
       }
     ],
     "achievements": [],

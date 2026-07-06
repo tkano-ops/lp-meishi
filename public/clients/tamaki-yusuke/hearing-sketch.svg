@@ -1,0 +1,60 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ヒアリングをしながら名刺デザインを考えているスケッチ">
+  <defs>
+    <filter id="softShadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#000000" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <!-- notebook page -->
+  <g filter="url(#softShadow)" transform="rotate(-2 300 220)">
+    <rect x="90" y="90" width="360" height="260" rx="10" fill="#fefdfb" stroke="#0a0a0a" stroke-opacity="0.12" />
+    <!-- ruled lines -->
+    <line x1="120" y1="300" x2="420" y2="300" stroke="#0a0a0a" stroke-opacity="0.08" />
+    <line x1="120" y1="316" x2="420" y2="316" stroke="#0a0a0a" stroke-opacity="0.08" />
+    <line x1="120" y1="332" x2="360" y2="332" stroke="#0a0a0a" stroke-opacity="0.08" />
+
+    <!-- card sketch (dashed) -->
+    <rect x="130" y="130" width="200" height="118" rx="14" fill="none" stroke="#0a0a0a" stroke-opacity="0.55" stroke-width="2" stroke-dasharray="6 6" />
+    <!-- handwritten wordmark on sketch -->
+    <text x="150" y="180" font-family="'Hiragino Mincho ProN','Noto Serif JP',serif" font-size="26" fill="#0a0a0a" opacity="0.7">ヒトイロ</text>
+    <!-- nfc arcs -->
+    <g transform="translate(292,150)" stroke="#0a0a0a" stroke-opacity="0.45" stroke-width="2" fill="none" stroke-linecap="round">
+      <path d="M0 12 A12 12 0 0 1 12 0" />
+      <path d="M-5 17 A19 19 0 0 1 17 -5" />
+    </g>
+    <!-- small revision arrow -->
+    <path d="M340 150 q18 10 4 26" stroke="#3a86ff" stroke-width="2" fill="none" stroke-linecap="round" />
+
+    <!-- color swatches (palette being chosen) -->
+    <g transform="translate(130,268)">
+      <circle cx="0" cy="0" r="11" fill="#e94560" />
+      <circle cx="28" cy="0" r="11" fill="#f0a500" />
+      <circle cx="56" cy="0" r="11" fill="#2ec4b6" />
+      <circle cx="84" cy="0" r="11" fill="#3a86ff" stroke="#0a0a0a" stroke-width="2" />
+      <circle cx="112" cy="0" r="11" fill="#8338ec" />
+    </g>
+
+    <!-- pencil -->
+    <g transform="translate(370,230) rotate(40)">
+      <rect x="0" y="0" width="14" height="90" rx="4" fill="#0a0a0a" opacity="0.85" />
+      <path d="M0 90 L14 90 L7 106 Z" fill="#f0a500" />
+      <rect x="0" y="-10" width="14" height="10" rx="2" fill="#8a8a8a" />
+    </g>
+  </g>
+
+  <!-- speech bubble: client -->
+  <g transform="translate(60,50)">
+    <path d="M0 20 Q0 0 20 0 L150 0 Q170 0 170 20 L170 62 Q170 82 150 82 L34 82 L10 100 L16 82 L20 82 Q0 82 0 62 Z" fill="#0a0a0a" />
+    <line x1="20" y1="26" x2="140" y2="26" stroke="#fafaf7" stroke-opacity="0.55" stroke-width="3" stroke-linecap="round" />
+    <line x1="20" y1="42" x2="118" y2="42" stroke="#fafaf7" stroke-opacity="0.4" stroke-width="3" stroke-linecap="round" />
+    <line x1="20" y1="58" x2="132" y2="58" stroke="#fafaf7" stroke-opacity="0.4" stroke-width="3" stroke-linecap="round" />
+  </g>
+
+  <!-- speech bubble: designer response -->
+  <g transform="translate(400,40)">
+    <path d="M170 20 Q170 0 150 0 L20 0 Q0 0 0 20 L0 56 Q0 76 20 76 L138 76 L164 96 L156 76 L150 76 Q170 76 170 56 Z" fill="#fefdfb" stroke="#0a0a0a" stroke-opacity="0.15" />
+    <line x1="20" y1="24" x2="130" y2="24" stroke="#0a0a0a" stroke-opacity="0.5" stroke-width="3" stroke-linecap="round" />
+    <line x1="20" y1="40" x2="150" y2="40" stroke="#0a0a0a" stroke-opacity="0.35" stroke-width="3" stroke-linecap="round" />
+    <line x1="20" y1="56" x2="100" y2="56" stroke="#0a0a0a" stroke-opacity="0.35" stroke-width="3" stroke-linecap="round" />
+  </g>
+</svg>

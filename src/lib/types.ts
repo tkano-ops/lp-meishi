@@ -44,6 +44,8 @@ export const heroSectionSchema = z.object({
   photo: z.string(),
   catchphrase: z.string(),
   subtitle: z.string(),
+  /** trueの場合、ヒーロー下部の氏名・肩書きフッター帯を非表示にする（省略時は表示） */
+  hideFooterMeta: z.boolean().optional(),
 });
 
 export const storySectionSchema = z.object({
@@ -51,12 +53,15 @@ export const storySectionSchema = z.object({
   body: z.string(),
   career: z.array(z.string()).optional(),
   breakoutImage: imageSchema.optional(),
+  /** 本文左の余白（サイドカラム）に添える小さな挿絵。essayとの関連性を視覚化する */
+  sideImage: imageSchema.optional(),
 });
 
 export const serviceSchema = z.object({
   title: z.string(),
   description: z.string(),
   icon: z.string().optional(),
+  image: imageSchema.optional(),
 });
 
 export const achievementSchema = z.object({

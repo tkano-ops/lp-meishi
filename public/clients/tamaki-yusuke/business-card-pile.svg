@@ -1,0 +1,77 @@
+<svg width="320" height="420" viewBox="0 0 320 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="乱雑に積み重なった名刺の山。誰が誰だか分からなくなっていく様子">
+  <defs>
+    <filter id="cardDrop" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#000000" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <g filter="url(#cardDrop)">
+    <!-- card 1 -->
+    <g transform="translate(60,240) rotate(-22)">
+      <rect width="168" height="98" rx="7" fill="#fdfcf9" stroke="#00000014" />
+      <rect x="16" y="20" width="58" height="7" rx="3.5" fill="#0a0a0a" opacity="0.55" />
+      <rect x="16" y="33" width="38" height="5" rx="2.5" fill="#0a0a0a" opacity="0.3" />
+      <line x1="16" y1="66" x2="140" y2="66" stroke="#0a0a0a" stroke-opacity="0.1" />
+      <rect x="16" y="76" width="80" height="4" rx="2" fill="#0a0a0a" opacity="0.2" />
+      <circle cx="146" cy="24" r="9" fill="#3a86ff" opacity="0.35" />
+    </g>
+
+    <!-- card 2 -->
+    <g transform="translate(150,300) rotate(14)">
+      <rect width="168" height="98" rx="7" fill="#f4f2ec" stroke="#00000014" />
+      <rect x="16" y="20" width="66" height="7" rx="3.5" fill="#0a0a0a" opacity="0.5" />
+      <rect x="16" y="33" width="30" height="5" rx="2.5" fill="#0a0a0a" opacity="0.28" />
+      <line x1="16" y1="66" x2="140" y2="66" stroke="#0a0a0a" stroke-opacity="0.1" />
+      <rect x="16" y="76" width="60" height="4" rx="2" fill="#0a0a0a" opacity="0.18" />
+      <circle cx="146" cy="24" r="9" fill="#e94560" opacity="0.3" />
+    </g>
+
+    <!-- card 3 -->
+    <g transform="translate(24,150) rotate(31)">
+      <rect width="168" height="98" rx="7" fill="#0a0a0a" stroke="#ffffff10" />
+      <rect x="16" y="20" width="58" height="7" rx="3.5" fill="#fafaf7" opacity="0.65" />
+      <rect x="16" y="33" width="42" height="5" rx="2.5" fill="#fafaf7" opacity="0.35" />
+      <line x1="16" y1="66" x2="140" y2="66" stroke="#fafaf7" stroke-opacity="0.15" />
+      <rect x="16" y="76" width="70" height="4" rx="2" fill="#fafaf7" opacity="0.25" />
+    </g>
+
+    <!-- card 4 -->
+    <g transform="translate(120,90) rotate(-9)">
+      <rect width="168" height="98" rx="7" fill="#fdfcf9" stroke="#00000014" />
+      <rect x="16" y="20" width="50" height="7" rx="3.5" fill="#0a0a0a" opacity="0.5" />
+      <rect x="16" y="33" width="46" height="5" rx="2.5" fill="#0a0a0a" opacity="0.28" />
+      <line x1="16" y1="66" x2="140" y2="66" stroke="#0a0a0a" stroke-opacity="0.1" />
+      <rect x="16" y="76" width="90" height="4" rx="2" fill="#0a0a0a" opacity="0.2" />
+      <circle cx="146" cy="24" r="9" fill="#2ec4b6" opacity="0.3" />
+    </g>
+
+    <!-- card 5 -->
+    <g transform="translate(6,60) rotate(-38)">
+      <rect width="168" height="98" rx="7" fill="#efece4" stroke="#00000014" />
+      <rect x="16" y="20" width="60" height="7" rx="3.5" fill="#0a0a0a" opacity="0.45" />
+      <rect x="16" y="33" width="34" height="5" rx="2.5" fill="#0a0a0a" opacity="0.25" />
+      <line x1="16" y1="66" x2="140" y2="66" stroke="#0a0a0a" stroke-opacity="0.1" />
+      <rect x="16" y="76" width="66" height="4" rx="2" fill="#0a0a0a" opacity="0.18" />
+    </g>
+
+    <!-- card 6 -->
+    <g transform="translate(96,330) rotate(-4)">
+      <rect width="168" height="98" rx="7" fill="#fdfcf9" stroke="#00000014" />
+      <rect x="16" y="20" width="70" height="7" rx="3.5" fill="#0a0a0a" opacity="0.5" />
+      <rect x="16" y="33" width="28" height="5" rx="2.5" fill="#0a0a0a" opacity="0.26" />
+      <line x1="16" y1="66" x2="140" y2="66" stroke="#0a0a0a" stroke-opacity="0.1" />
+      <rect x="16" y="76" width="54" height="4" rx="2" fill="#0a0a0a" opacity="0.18" />
+      <circle cx="146" cy="24" r="9" fill="#8338ec" opacity="0.3" />
+    </g>
+
+    <!-- card 7 (front, sharpest) -->
+    <g transform="translate(48,190) rotate(6)">
+      <rect width="176" height="102" rx="8" fill="#fefdfb" stroke="#00000018" />
+      <rect x="18" y="22" width="64" height="8" rx="4" fill="#0a0a0a" opacity="0.6" />
+      <rect x="18" y="36" width="40" height="6" rx="3" fill="#0a0a0a" opacity="0.32" />
+      <line x1="18" y1="72" x2="150" y2="72" stroke="#0a0a0a" stroke-opacity="0.12" />
+      <rect x="18" y="82" width="86" height="5" rx="2.5" fill="#0a0a0a" opacity="0.22" />
+      <circle cx="154" cy="26" r="10" fill="#f0a500" opacity="0.35" />
+    </g>
+  </g>
+</svg>

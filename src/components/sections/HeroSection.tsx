@@ -8,6 +8,7 @@ export default function HeroSection({ data }: { data: ClientData }) {
   const titleLines = data.title.split("、");
   const year = new Date().getFullYear();
   const photo = data.sections.hero.photo;
+  const isVector = photo.endsWith(".svg");
   const fg = onPrimary(data.theme);
   const spectrum = data.theme.spectrum;
 
@@ -35,7 +36,25 @@ export default function HeroSection({ data }: { data: ClientData }) {
         />
       )}
 
-      {photo && (
+      {photo && isVector && (
+        <div className="absolute inset-y-0 right-0 w-full lg:w-[55%] pointer-events-none flex items-center justify-center lg:justify-end lg:pr-16">
+          <motion.div
+            initial={{ opacity: 0, scale: 1.05 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1.8, ease: [0.16, 1, 0.3, 1] }}
+            className="relative w-[78%] sm:w-[60%] lg:w-[85%] max-w-[520px] aspect-square"
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={photo}
+              alt={data.name}
+              className="w-full h-full object-contain drop-shadow-2xl"
+            />
+          </motion.div>
+        </div>
+      )}
+
+      {photo && !isVector && (
         <div className="absolute inset-y-0 right-0 w-full lg:w-[55%] pointer-events-none">
           <motion.div
             initial={{ opacity: 0, scale: 1.05 }}
@@ -84,7 +103,7 @@ export default function HeroSection({ data }: { data: ClientData }) {
           >
             01 — COVER STORY
           </motion.div>
-          <h1 className="font-serif font-medium tracking-tight leading-[1.02] text-[14vw] sm:text-[11vw] lg:text-[8.5vw]">
+          <h1 className="font-serif font-medium tracking-tight leading-[1.02] text-[14vw] sm:text-[11vw] lg:text-[min(8.5vw,112px)]">
             {titleLines.map((line, i, arr) => (
               <motion.span
                 key={i}
@@ -106,42 +125,35 @@ export default function HeroSection({ data }: { data: ClientData }) {
       </div>
 
       <footer className="relative z-10 px-6 sm:px-10 lg:px-16 pb-8 sm:pb-12">
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.9 }}
-          className="border-t pt-6 sm:pt-8 flex flex-col sm:flex-row sm:items-end gap-6 sm:gap-12"
-          style={{ borderColor: "rgba(250,250,247,0.15)" }}
-        >
-          <div className="flex-1">
-            <div
-              className="font-mono text-[10px] tracking-[0.35em] mb-3 opacity-60"
-              style={{ color: data.theme.accent }}
-            >
-              FOUNDER & CEO
-            </div>
-            <div className="font-serif text-3xl sm:text-4xl lg:text-5xl font-medium leading-none">
-              {data.name}
-            </div>
-            {data.nameKana && (
-              <div className="font-mono text-[10px] sm:text-xs tracking-[0.3em] mt-3 opacity-50 uppercase">
-                {data.nameKana}
+        {!data.sections.hero.hideFooterMeta && (
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.9 }}
+            className="border-t pt-6 sm:pt-8 flex flex-col sm:flex-row sm:items-end gap-6 sm:gap-12"
+            style={{ borderColor: "rgba(250,250,247,0.15)" }}
+          >
+            <div className="flex-1">
+              <div
+                className="font-mono text-[10px] tracking-[0.35em] mb-3 opacity-60"
+                style={{ color: data.theme.accent }}
+              >
+                FOUNDER & CEO
               </div>
-            )}
-          </div>
-          <div className="sm:max-w-md sm:text-right text-sm sm:text-base opacity-80 leading-relaxed font-light [word-break:keep-all]">
-            {data.subtitle}
-          </div>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 0.4 }}
-          transition={{ duration: 1, delay: 1.4 }}
-          className="absolute bottom-3 left-1/2 -translate-x-1/2 font-mono text-[9px] tracking-[0.4em]"
-        >
-          SCROLL ↓
-        </motion.div>
+              <div className="font-serif text-3xl sm:text-4xl lg:text-5xl font-medium leading-none">
+                {data.name}
+              </div>
+              {data.nameKana && (
+                <div className="font-mono text-[10px] sm:text-xs tracking-[0.3em] mt-3 opacity-50 uppercase">
+                  {data.nameKana}
+                </div>
+              )}
+            </div>
+            <div className="sm:max-w-md sm:text-right text-sm sm:text-base opacity-80 leading-relaxed font-light [word-break:keep-all]">
+              {data.subtitle}
+            </div>
+          </motion.div>
+        )}
       </footer>
     </section>
   );
