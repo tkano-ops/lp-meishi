@@ -12,6 +12,7 @@ import VisionSection from "@/components/sections/VisionSection";
 import GallerySection from "@/components/sections/GallerySection";
 import SnsLinksSection from "@/components/sections/SnsLinksSection";
 import ContactSection from "@/components/sections/ContactSection";
+import TunadeLandingPage from "@/components/tunade/TunadeLandingPage";
 
 // セルフ編集の保存時に revalidatePath で即時更新するので、これは保険としての定期再生成
 export const revalidate = 3600;
@@ -75,6 +76,10 @@ export default async function ClientLPPage({
   const { slug } = await params;
   const client = await loadClient(slug);
   if (!client) notFound();
+
+  if (slug === "tunade") {
+    return <TunadeLandingPage data={client} />;
+  }
 
   return (
     <main

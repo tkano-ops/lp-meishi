@@ -1,0 +1,66 @@
+{
+  "slug": "tunade",
+  "name": "整体院繋手-つなで-",
+  "nameKana": "せいたいいん つなで",
+  "title": "慢性的な痛みを、「仕方ない」で終わらせない。",
+  "subtitle": "岡崎市上里｜国家資格・柔道整復師による完全予約制の整体院",
+  "meta": {
+    "ogTitle": "整体院繋手-つなで-｜岡崎市の整体・姿勢矯正",
+    "ogDescription": "岡崎市上里の整体院。肩こり・首こり・腰痛、猫背・反り腰などのお悩みに、柔道整復師が一人ひとりに合わせて丁寧に対応します。夜23時まで・駐車場2台・完全予約制。",
+    "ogImage": "/clients/tunade/logo.png",
+    "keywords": ["岡崎市 整体", "岡崎市 姿勢矯正", "肩こり", "腰痛", "猫背", "反り腰", "整体院繋手"]
+  },
+  "theme": {
+    "primary": "#38664f",
+    "accent": "#91bd7c",
+    "background": "#fbfaf5",
+    "text": "#26372e",
+    "onPrimary": "#ffffff",
+    "surface": "#eef5e9",
+    "visionBackground": "#294b3b",
+    "style": "warm",
+    "fontHeading": "serif",
+    "fontBody": "sans-serif"
+  },
+  "sections": {
+    "hero": {
+      "photo": "/clients/tunade/profile-story.png",
+      "catchphrase": "痛みの先の、やりたいことへ。",
+      "subtitle": "慢性痛・姿勢矯正に特化。柔道整復師が身体全体を見て、あなたに合う施術をご提案します。",
+      "hideFooterMeta": true
+    },
+    "story": {
+      "heading": "手から、笑顔の未来へ繋ぐ。",
+      "body": "身体の痛みによって、やりたいことを諦める人を減らしたい。その想いから柔道整復師を志しました。同じ場所に痛みがあっても、原因や生活環境は一人ひとり異なります。決められた施術をこなすのではなく、目の前の方と丁寧に向き合う。『繋手』には、施術する手を通じて、身体と心、今の悩みと笑顔の未来を繋ぎたいという願いを込めています。",
+      "career": ["国家資格・柔道整復師", "整体院繋手-つなで- 代表", "2026年5月1日 岡崎市上里に開院"]
+    },
+    "services": [
+      {"title": "整体＋姿勢矯正（60分）｜7,000円", "description": "全身の不調と姿勢をまとめて整えたい方へ。"},
+      {"title": "整体（50分）｜6,000円", "description": "身体のバランスを整え、慢性的なつらさに向き合います。"},
+      {"title": "整体ショート（30分）｜4,000円", "description": "定期的なメンテナンスや部分的なケアに。"},
+      {"title": "姿勢矯正（15分）｜2,500円", "description": "猫背や反り腰など、姿勢のお悩みに。"}
+    ],
+    "achievements": [
+      {"label": "国家資格", "detail": "柔道整復師が在籍"},
+      {"label": "完全予約制", "detail": "待ち時間を抑えて丁寧に対応"},
+      {"label": "23時まで営業", "detail": "仕事帰りにも通いやすい"},
+      {"label": "駐車場2台", "detail": "お車で来院可能"}
+    ],
+    "testimonials": [
+      {"quote": "姿勢矯正を通して、日常での変化を感じています。毎回丁寧に見ていただけるので安心して通えます。", "author": "姿勢矯正で通院のお客様", "photo": "/clients/tunade/voice-posture.png"},
+      {"quote": "仕事で忙しいなかでも時間をつくって来院してよかったです。肩まわりが軽くなり、また来たいと思いました。", "author": "肩こりでお悩みのお客様", "photo": "/clients/tunade/voice-shoulder.png"},
+      {"quote": "自分では気づきにくい日常の癖や身体のバランスまで見てもらえました。腰のつらさも相談できて安心です。", "author": "腰痛でお悩みのお客様", "photo": "/clients/tunade/voice-back.png"}
+    ],
+    "vision": {
+      "heading": "痛みを気にせず、毎日を楽しめる身体へ。",
+      "body": "施術はゴールではなく、やりたいことを楽しむための一歩です。一緒に身体の変化と向き合い、地域の皆さまが健やかに過ごせる未来へ繋いでいきます。"
+    },
+    "gallery": [],
+    "sns": [
+      {"platform": "instagram", "url": "https://www.instagram.com/okazaki_seitai.tunade/", "label": "Instagramで院の様子を見る"}
+    ],
+    "contact": [
+      {"type": "line", "url": "#line", "label": "公式LINEで予約・相談する", "primary": true}
+    ]
+  }
+}
